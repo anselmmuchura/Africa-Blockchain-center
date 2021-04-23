@@ -668,15 +668,97 @@ span.arrow-left{
     width: 100%;
     padding-right: 8%;
   }
-
+  #page-nav .left-sub-image {
+    bottom: 10vh;
+  }
+#page-nav .center-nav-arrow {
+  width: 15%;
+  left: 0%;
+}
+#page-nav .right-nav-link {
+  width: 85%;
+  position: absolute;
+  left: 15%;
+}
+.dot-1{
+  left:10%;
+}
+.dot-2{
+  left:28%;
+}
+.dot-3{
+  left:46%;
+}
+.dot-4{
+  left:64%;
+}
+.dot-5{
+  left:82%;
+}
+#services .carousel-control-next,#services .carousel-control-prev {
+  background-color: transparent;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter:unset;
  }
-
+ .services-img{
+   display: none;
+ }
+#portfolio{
+  height: 150vh;
+}
+ #portfolio .d-flex,  #team .d-flex{
+  display: block !important;
+}
+.img-nav, #services .blur-overlay , #portfolio .blur-overlay,  #team .blur-overlay{
+  width: 100%;
+}
+#portfolio .portfolio-desc, #team  .team-desc{
+  width: 100%;
+  padding-left: 8%;
+  padding-top:20%;
+  display: block;
+}
+#portfolio .portfolio-grid{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: unset;
+  margin-top: -90vh;
+}
+#team {
+  height: 130vh;
+}
+#team .team-carousel{
+  height: unset;
+  width: 100%;
+  align-items: center;
+}
+#contact-us .contact-us-desc {
+  width: 100%;
+}
+#contact-us .blur-overlay {
+  width: 100%;
+}
+}
  @media (max-width: 767.98px) { 
-
+  #page-nav .center-nav-arrow{
+    bottom: 10vh;
+    left: 20%;
+}
+#page-nav .right-nav-link {
+  width: 100%;
+  left: 0%;
+}
+#portfolio .portfolio-desc, #team .team-desc {
+  padding-top: 25%;
+}
 
  }
 
 @media (max-width: 575.98px) {
+  body{
+    overflow-x: hidden;
+  }
   #overview .overview-desc {
     width: 100%;
     padding-right: 8%;
@@ -684,6 +766,31 @@ span.arrow-left{
   #overview{
     height: 100vh;
   }
+  #page-nav .left-sub-image {
+    display:none;
+}
+#page-nav .right-nav-link {
+  display:none;
+}
+#page-nav .center-nav-arrow {
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+#portfolio {
+  height: 1650px;
+}
+  #portfolio .portfolio-desc, #team .team-desc {
+    padding-top: 40%;
+    height: unset;
+}
+#portfolio .portfolio-grid {
+  position: relative;
+  margin-top: 0vh;
+}
+#team {
+  height: 150vh;
+}
  }
 
 
