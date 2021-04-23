@@ -17,26 +17,24 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" >
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+
 </head>
 
-<body>
+<body class="slides">
+  <!-- ======= Header with Logo ======= -->
+  <header>
+      <a class="navbar-brand" href="/"><img src="assets/img/abc logo.png"></a>
+  </header>
+  <!-- ======= End Header with Logo ======= -->
 
-  <!-- ======= Start ======= -->
-  <main id="main">
-
-    <!-- ======= Header with Logo ======= -->
-     <header>
-          <a class="navbar-brand" href="/"><img src="assets/img/abc logo.png"></a>
-     </header>
-     <!-- ======= End Header with Logo ======= -->
-
-
-     <section id="overview" class="hor-page">
+  <main class="page-main main-anim fullpg" id="mainpage">
+     <section id="overview" class="hor-page active" data-section="overview">
         <div class="d-flex">
             <div class="overview-left flex-col">
                   <div class="overview-desc">
@@ -47,8 +45,8 @@
             </div>
         </div>   
      </section>
-
-     <section id="services" class="hor-page">
+    
+     <section id="services" class="hor-page" data-section="services">
          <div class="services-slider">
             <div id="carouselServices" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -84,7 +82,7 @@
                   <div class="d-flex">
                       <div class="services-desc">
                         <h2 class="section-title">Services</h2>
-                        <h4 class="section-subtitle"> </h4>
+                        <h4 class="section-subtitle">Strategy Development </h4>
                         <p>Lead clients in defining blockchain goals and objectives as part of their unique journey with a strategic plan to define “where to play and how to win” Craft comprehensive business cases to enable executive buy-in to drive business, technology, integration, talent, and consortium operating models Develop strategies to pilot and implement blockchain based solutions for prioritized/selected use cases.</p>
                       </div>
                       <div class="services-img">
@@ -110,8 +108,8 @@
          </div>
          <div class="blur-overlay"></div>
      </section>
-
-     <section id="portfolio" class="hor-page">
+ 
+     <section id="portfolio" class="hor-page slide" data-section="portfolio">
       <div class="d-flex">
         <div class="portfolio-desc">
           <h2 class="section-title">Portfolio</h2>
@@ -139,7 +137,7 @@
       <div class="blur-overlay"></div>
      </section>
 
-     <section id="contact-us" class="hor-page">
+     <section id="contact-us" class="hor-page slide" data-section="contact-us">
       <div class="d-flex">
           <div class="contact-us-left flex-col">
                 <div class="contact-us-desc">
@@ -151,7 +149,7 @@
       </div>   
      </section>
 
-     <section id="team" class="hor-page">
+     <section id="team" class="hor-page slide" data-section="team">
          <div class="d-flex">
             <div class="team-left flex-col">
                   <div class="team-desc">
@@ -161,20 +159,15 @@
                   
             </div>
             <div class="team-carousel">
-                <!--Carousel Wrapper-->
                 <div id="team-slider" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                  <!--Controls-->
                   <div class="controls">
                     <a class="btn-floating" href="#team-slider" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
                     <a class="btn-floating" href="#team-slider" data-slide="next"><i class="fa fa-chevron-right"></i></a>
                   </div>
-                  <!--/.Controls-->
 
-                  <!--Slides-->
                   <div class="carousel-inner" role="listbox">
 
-                    <!--First slide-->
                     <div class="carousel-item active">
 
                       <div class="row">
@@ -213,9 +206,7 @@
                       </div>
 
                     </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
+    
                     <div class="carousel-item">
 
                       <div class="row">
@@ -254,24 +245,26 @@
                       </div>
 
                     </div>
-                    <!--/.Second slide-->
+ 
 
                   </div>
-                  <!--/.Slides-->
 
                 </div>
-                <!--/.Carousel Wrapper-->
 
             </div>
         </div> 
         <div class="blur-overlay"></div>
-     </section>
+     </section> 
 
-     <section id="page-nav">
+     
+  </main><!-- End #main -->
+
+  <section id="page-nav">
         <div class="d-flex">
            <div class="flex-col">
               <div class="left-sub-image ">
                   <img src="assets/img/services-banner.jpg">
+                  <h2 class="image-title">Next Up </h2>
               </div>
            </div>
            <div class="center-nav-arrow flex-col">
@@ -284,10 +277,11 @@
                 <div class="events-wrapper">
                    <div class="events">
                        <ul>
-                           <li><a href="#0" data-date="01/05/2015" class="selected dot-1"><span class="link-label label-1">Overview</span></a></li>
-                           <li><a href="#0" data-date="01/03/2014" class="dot-2"><span class="link-label label-2">Services</span></a></li>
-                           <li><a href="#0" data-date="01/02/2013" class="dot-3"><span class="link-label label-3">Portfolio</span></a></li>
-                           <li><a href="#0" data-date="01/02/2013" class="dot-4"><span class="link-label label-4">Contacts</span></a></li>
+                           <li><a href="#" class="selected dot-1"><span class="link-label label-1">Overview</span></a></li>
+                           <li><a href="#" class="dot-2"><span class="link-label label-2">Services</span></a></li>
+                           <li><a href="#" class="dot-3"><span class="link-label label-3">Portfolio</span></a></li>
+                           <li><a href="#" class="dot-4"><span class="link-label label-4">Contacts</span></a></li>
+                           <li><a href="#" class="dot-5"><span class="link-label label-5">Team</span></a></li>
                        </ul>
 
                        <span class="filling-line" aria-hidden="true"></span>
@@ -298,16 +292,12 @@
         </div>
      </section>
 
-
-  </main><!-- End #main -->
-
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/owlcarousel/owl.carousel.min.js" ></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

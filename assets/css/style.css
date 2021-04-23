@@ -76,7 +76,7 @@ header {
   padding-top: 1rem;
   padding-left: 8%;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 400;
 }
 
 header .navbar-brand img {
@@ -99,7 +99,16 @@ header .navbar-brand img {
 #page-nav .left-sub-image{
   width: 20%;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
+}
+#page-nav .left-sub-image h2.image-title{
+   font-size: 16px;
+    font-family: 'NeoGothis ADF Std', sans-serif;
+    color: #ffffff;
+    text-align: right;
+    position: absolute;
+    bottom: 5%;
+    left:5%;
 }
 #page-nav  .center-nav-arrow{
   width:10%;
@@ -165,7 +174,7 @@ span.arrow-left{
 .timeline  .events-wrapper .events {
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 70%;
   height: 1px;
   width: 100%;
   background: #dfdfdf;
@@ -188,15 +197,18 @@ span.arrow-left{
   transform: translateZ(0);
 }
 .dot-1{
-  left:20%;
+  left:16%;
 }
 .dot-2{
-  left:40%;
+  left:32%;
 }
 .dot-3{
-  left:60%;
+  left:48%;
 }
 .dot-4{
+  left:64%;
+}
+.dot-5{
   left:80%;
 }
 .timeline .events a::after {
@@ -243,21 +255,30 @@ span.arrow-left{
   text-align: center;
   font-family: 'NeoGothis ADF Std', sans-serif;
   letter-spacing: 0px;
+  text-transform: capitalize;
 }
 .link-label.label-2{
   font-size: 18px;
 }
 
 .link-label.label-3{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .link-label.label-4{
+  font-size: 14px;
+}
+
+.link-label.label-5{
   font-size: 12px;
 }
 
-
-
+.hor-page{
+  display: none;
+}
+.hor-page.active{
+  display: block;
+}
 
 
 /*--------------------------------------------------------------
@@ -278,7 +299,7 @@ span.arrow-left{
   background: url(../img/overview-banner.jpg)  0% 0% no-repeat padding-box;
   background-repeat: no-repeat;
   background-size: cover;
-  display: none;
+
 }
 #overview .d-flex{
   flex-direction: column;
@@ -347,7 +368,7 @@ span.arrow-left{
 
 #services .services-desc{
   position: relative;
-   width:30%;
+   width:40%;
    padding-left: 8%;
    padding-right: 2%;
    height: 100%;
@@ -378,16 +399,16 @@ span.arrow-left{
 }
 
 .services-img{
-  position: relative;
-  align-items: flex-end;
-   width:55%;
-   padding-left: 8%;
-   padding-right: 2%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   z-index: 5;
+  position: absolute;
+    top: 0;
+    right: 0;
+    align-items: baseline;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 50;
 }
 .services-img h2.image-title{
   font-size: 30px;
@@ -396,12 +417,12 @@ span.arrow-left{
     text-align: right;
     position: absolute;
     width: 35%;
-    right: 8%;
+    right: 15%;
 }
 #services .blur-overlay{
   position: absolute;
   top:0;
-  width:32%;
+  width:35%;
   height: 100%;
   background: url(../img/services-blur-bg.jpg);
   background-size: cover;
@@ -443,7 +464,6 @@ span.arrow-left{
   background: url(../img/portfolio-banner.jpg)  0% 0% no-repeat padding-box;
   background-repeat: no-repeat;
   background-size: cover;
-  display: none;
 }
 #portfolio .d-flex{
   justify-content: center;
@@ -507,7 +527,6 @@ span.arrow-left{
   background: url(../img/contact-us-banner.jpg)  0% 0% no-repeat padding-box;
   background-repeat: no-repeat;
   background-size: cover;
-  display:none;
 }
 #contact-us .d-flex{
   flex-direction: column;
@@ -560,7 +579,6 @@ span.arrow-left{
   background: url(../img/portfolio-banner.jpg)  0% 0% no-repeat padding-box;
   background-repeat: no-repeat;
   background-size: cover;
-  display: none;
 }
 #team .d-flex{
   justify-content: center;
@@ -609,8 +627,8 @@ span.arrow-left{
 #team .team-carousel{
   position: relative;
   align-items: flex-end;
-  width: 75%;
-  padding-left: 8%;
+  width: 90%;
+  padding-left: 5%;
   padding-right: 8%;
   height: 100%;
   display: flex;
@@ -618,7 +636,6 @@ span.arrow-left{
   justify-content: center;
   z-index: 5;
 }
-
 #team-slider .card{
   border: none;
 }
